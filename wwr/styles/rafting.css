@@ -1,11 +1,11 @@
-/* Universal Reset */
+/* ========== UNIVERSAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variables */
+/* ========== VARIABLES ========== */
 :root {
   --primary-color: #505033;
   --secondary-color: #264969;
@@ -15,31 +15,29 @@
   --body-font: 'Roboto', sans-serif;
 }
 
-/* Body */
+/* ========== BASE STYLES ========== */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: white;
 }
 
-/* Page Width */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Header */
+/* ========== HEADER ========== */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
@@ -61,7 +59,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero */
+/* ========== HERO SECTION ========== */
 .hero {
   position: relative;
 }
@@ -100,7 +98,7 @@ nav a {
   border-radius: 6px;
 }
 
-/* Footer */
+/* ========== FOOTER ========== */
 footer {
   background-color: var(--secondary-color);
   color: white;
@@ -112,9 +110,15 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .socialmedia a {
   text-decoration: none;
-  margin: 0 10px;
 }
 
 .socialmedia img {
