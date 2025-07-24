@@ -7,62 +7,79 @@
   <meta name="author" content="Miracle Peter" />
   <title>About Us | Whitewater Rafting Co.</title>
 
-  <!-- ✅ CSS Link -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/rafting.css" />
-
-  <!-- ✅ Correct Google Fonts Link with 2+ families -->
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ✅ HEADER -->
-  <header>
+  <!-- ✅ HEADER WITH GRID -->
+  <header class="header-grid">
     <img src="images/image.png" alt="Whitewater Rafting Co. Logo" />
+    <h1>Whitewater Rafting Co.</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <ul class="nav-flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- ✅ MAIN -->
   <main>
-    <!-- ✅ HERO SECTION -->
-    <div class="hero">
-      <img src="images/rafting27_1024 hero image.jpg" alt="Rafting Adventure Background" />
+    <!-- ✅ HERO -->
+    <section class="hero">
+      <img src="images/rafting27_1024 hero image.jpg" alt="Rafting Adventure" />
       <h1>Whitewater Rafting Co.</h1>
       <article>
-        <img src="images/rafting18_600.jpg" alt="Happy Rafting Guide" />
-        <p>At Whitewater Rafting Co., we live for adventure! Since 2003, our mission has been to deliver unforgettable river experiences to thrill-seekers and families alike. Our trained guides are passionate about the rapids, safety, and creating memories that last a lifetime.</p>
+        <img src="images/rafting18_600.jpg" alt="Raft Guide" />
+        <p>At Whitewater Rafting Co., we live for adventure! Since 2003, our mission has been to deliver unforgettable river experiences. Our trained guides are passionate about the rapids, safety, and creating memories that last a lifetime.</p>
       </article>
-    </div>
-
-    <!-- ✅ HISTORY SECTION -->
-    <section>
-      <h2>History</h2>
-      <p>Founded in 2003, Whitewater Rafting Co. started with one raft and a dream. Today, we’re one of the most trusted rafting companies in the U.S., delivering safe, thrilling, and scenic river trips nationwide.</p>
     </section>
 
-    <!-- ✅ ADVENTURE SECTION -->
-    <section>
+    <!-- ✅ HISTORY -->
+    <section class="history">
+      <h2>History</h2>
+      <p>Founded in 2003, Whitewater Rafting Co. started with one raft and a dream. Over two decades later, we’ve grown into one of the most trusted rafting companies in the country, known for safety, excitement, and unforgettable river adventures.</p>
+    </section>
+
+    <!-- ✅ ADVENTURE WITH <figure> -->
+    <section class="adventures">
       <h2>Adventure Awaits You!</h2>
-      <img src="images/rafting47_600.jpg" alt="Adventure 1" />
-      <img src="images/rafting53_600.jpg" alt="Adventure 2" />
-      <img src="images/rafting59_600.jpg" alt="Adventure 3" />
-      <img src="images/rafting65_600.jpg" alt="Adventure 4" />
-      <img src="images/rafting20_600.jpg" alt="Adventure 5" />
+      <div class="adventure-gallery">
+        <figure>
+          <img src="images/rafting47_600.jpg" alt="Los Dientes del Diablo" />
+          <figcaption>Los Dientes del Diablo</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting53_600.jpg" alt="Big Mallard" />
+          <figcaption>Big Mallard</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting59_600.jpg" alt="Half Day Adventure" />
+          <figcaption>Half Day Adventure</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting65_600.jpg" alt="Snake River" />
+          <figcaption>Snake River</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting20_600.jpg" alt="The Gauntlet" />
+          <figcaption>The Gauntlet</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
-  <!-- ✅ FOOTER - FIXED -->
+  <!-- ✅ FOOTER -->
   <footer>
     <p>&copy; 2025 Whitewater Rafting Co. | Miracle Peter</p>
-    <nav class="socialmedia">
-      <a href="#"><img src="images/1_Facebook_colored_svg_copy-128.webp" alt="Facebook Icon" /></a>
-      <a href="#"><img src="images/X-128.webp" alt="X Icon" /></a>
-      <a href="#"><img src="images/instagram_icon-instagram_buttoninstegram-128.webp" alt="Instagram Icon" /></a>
-    </nav>
+    <div class="socialmedia">
+      <a href="#"><img src="images/1_Facebook_colored_svg_copy-128.webp" alt="Facebook" /></a>
+      <a href="#"><img src="images/X-128.webp" alt="X" /></a>
+      <a href="#"><img src="images/instagram_icon-instagram_buttoninstegram-128.webp" alt="Instagram" /></a>
+    </div>
   </footer>
 
 </body>
