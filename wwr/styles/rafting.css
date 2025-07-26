@@ -1,11 +1,11 @@
-/* ========== UNIVERSAL RESET ========== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ========== VARIABLES ========== */
+/* VARIABLES */
 :root {
   --primary-color: #505033;
   --secondary-color: #264969;
@@ -15,7 +15,7 @@
   --body-font: 'Roboto', sans-serif;
 }
 
-/* ========== BASE STYLES ========== */
+/* BASE STYLES */
 body {
   font-family: var(--body-font);
   background-color: white;
@@ -34,37 +34,36 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-section, article, p {
+p {
   margin-bottom: 1rem;
 }
 
-/* ========== HEADER (GRID + FLEX NAV) ========== */
-header {
+/* HEADER - GRID + FLEX NAV */
+.header-grid {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  padding: 1rem;
 }
 
-header img {
+.header-grid img {
   height: 60px;
 }
 
-nav ul {
+.nav-flex {
   display: flex;
   gap: 1rem;
   list-style: none;
 }
 
-nav a {
+.nav-flex a {
   text-decoration: none;
   color: var(--accent2-color);
   font-weight: bold;
 }
 
-/* ========== HERO SECTION ========== */
+/* HERO SECTION */
 .hero {
   position: relative;
   margin-bottom: 2rem;
@@ -105,37 +104,41 @@ nav a {
   border-radius: 6px;
 }
 
-/* ========== HISTORY SECTION ========== */
-section:nth-of-type(1) {
+/* HISTORY SECTION */
+.history {
   background-color: var(--accent2-color);
   padding: 1rem;
   border-radius: 6px;
+  margin-bottom: 2rem;
 }
 
-/* ========== ADVENTURE SECTION ========== */
-section:nth-of-type(2) {
-  margin-top: 2rem;
+/* ADVENTURE SECTION */
+.adventures {
+  margin-bottom: 2rem;
+}
+
+.adventure-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
 }
 
-section:nth-of-type(2) figure {
+.adventure-gallery figure {
   text-align: center;
 }
 
-section:nth-of-type(2) img {
+.adventure-gallery img {
   width: 100%;
   border-radius: 4px;
 }
 
-section:nth-of-type(2) figcaption {
+.adventure-gallery figcaption {
   font-size: 0.9rem;
   color: var(--primary-color);
   margin-top: 0.5rem;
 }
 
-/* ========== FOOTER ========== */
+/* FOOTER */
 footer {
   background-color: var(--secondary-color);
   color: white;
@@ -143,7 +146,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem;
 }
 
 footer p {
@@ -152,6 +154,7 @@ footer p {
 
 .socialmedia {
   display: flex;
+  justify-content: flex-end;
   gap: 1rem;
 }
 
