@@ -162,3 +162,24 @@ footer p {
   width: 24px;
   height: auto;
 }
+
+/* EMPLOYEE SECTION */
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.employee-grid img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.employee-grid figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
