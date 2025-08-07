@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Us - White Water Rafting Site" />
+  <meta name="author" content="Your Name" />
+  <title>Contact Us - White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rafting Site Logo" />
+    <h1>White Water Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="company-info" class="company-info">
+      <h2>Contact Information</h2>
+      <p><strong>Company:</strong> White Water Rafting Adventures</p>
+      <p><strong>Address:</strong> 123 River Lane, Rapids City, RC 54321</p>
+      <p><strong>Phone:</strong> <a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!..." 
+          width="600" height="450" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="employees" class="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Team Member 1" />
+        <figcaption>John Doe - River Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Team Member 2" />
+        <figcaption>Jane Smith - Safety Expert</figcaption>
+      </figure>
+    </section>
+
+    <section id="contact-form" class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="contact.html" method="post">
+        <fieldset>
+          <legend>Contact Details</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label>Purpose:</label>
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation" /> Reservation</label>
+          <label><input type="radio" name="purpose" value="feedback" /> Feedback</label>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe" />
+            Please subscribe me to the monthly newsletter.
+          </label>
+        </fieldset>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+    <nav class="socials">
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+    </nav>
+    <p><a href="https://app.moqups.com/your-wireframe-link">View Wireframe</a></p>
+  </footer>
+</body>
+</html>
