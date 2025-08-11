@@ -1,0 +1,749 @@
+/* Main Stylesheet for Afriq Raft Website */
+
+/* 1. Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+
+/* 2. Define CSS variables for colors and fonts in the :root pseudo-class */
+:root {
+    /* Color Palette */
+    --primary-color: #1A4F52;    /* Dark Teal */
+    --secondary-color: #39974B;  /* Green */
+    --accent1-color: #E76731;    /* Burnt Orange */
+    --accent2-color: #FFFFFF;    /* White */
+    --light-bg-color: #f0f0f0;   /* A light grey for backgrounds */
+    --dark-text-color: #2c2c2c;  /* A dark grey for text */
+
+    /* Typography */
+    --heading-font: 'Roboto Slab', serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+/* 3. Global Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--light-bg-color);
+    color: var(--dark-text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+/* 4. Header & Navigation Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 1.1rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* 5. Footer Styles - UPDATED */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between; /* This spreads the items out */
+    align-items: center;
+    margin-top: auto;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 1rem;
+}
+
+/* Use the 'order' property to arrange the items */
+footer p {
+    order: -1; /* This places the copyright at the beginning (left) */
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-center-link {
+    order: 0; /* This keeps the link in the middle */
+}
+
+.socialmedia {
+    order: 1; /* This places the social media icons at the end (right) */
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+.footer-center-link a {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--dark-text-color);
+    background-color: var(--accent1-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 5px 0 0 #b34b1a;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-center-link a:hover {
+    background-color: #e48753;
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 0 #b34b1a;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    header nav a {
+        padding: 0.5rem;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer p, .socialmedia, .footer-center-link {
+        order: initial; /* Resets the order for a stacked, centered layout on mobile */
+    }
+}
+
+
+
+/* Trips Page Specific Styles */
+
+/* Hero Section */
+.hero-trips {
+    background-image: url('../images/hero1_1_11zon.jpg'); /* Use a strong hero image here */
+    background-size: cover;
+    background-position: center;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.hero-trips::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--accent2-color);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* Trip Table Section */
+.trip-table-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: var(--light-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-weight: 700;
+}
+
+.trip-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+.book-trip-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.book-trip-button:hover {
+    background-color: #d15623;
+}
+
+/* Responsive Table Styles */
+@media (max-width: 768px) {
+    .trip-table thead {
+        display: none; /* Hide the table headers on mobile */
+    }
+    
+    .trip-table, .trip-table tbody, .trip-table tr, .trip-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .trip-table tr {
+        margin-bottom: 1rem;
+        background-color: var(--accent2-color);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: none;
+        padding: 1rem;
+    }
+    
+    .trip-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: none;
+    }
+    
+    .trip-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 50%;
+        padding-right: 1rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+    
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+
+
+/* Contact Us Page Specific Styles */
+
+/* Contact Hero and Info Section */
+.contact-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.contact-hero h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-details p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.contact-details strong {
+    color: var(--accent1-color);
+}
+
+.contact-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Our Location Map Section */
+.contact-map {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.contact-map h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.employee-profiles h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.team-members figure {
+    background-color: var(--light-bg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.team-members figure:hover {
+    transform: translateY(-5px);
+}
+
+.team-members figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.team-members figcaption {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: var(--light-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent1-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 103, 49, 0.5);
+}
+
+.purpose-radios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.purpose-radios div {
+    display: flex;
+    align-items: center;
+}
+
+.purpose-radios input,
+.newsletter-checkbox input {
+    margin-right: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #2b7a37; /* A slightly darker green */
+}
+
+/* Responsive adjustments for Contact Hero */
+@media (min-width: 768px) {
+    .contact-hero {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .contact-info {
+        flex: 1;
+    }
+    .contact-info h2 {
+        text-align: left;
+    }
+    .contact-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .contact-image {
+        flex: 1;
+    }
+}
+
+
+/* Home Page Specific Styles */
+
+/* Hero Section */
+.hero-home {
+    background-image: url('../images/hero1_1_11zon.jpg'); /* Your original hero image */
+    background-size: cover;
+    background-position: center;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.hero-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--accent2-color);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d15623; /* A slightly darker orange */
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-posts h2 {
+    margin-bottom: 2rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background-color: var(--light-bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post h3 {
+    padding: 1rem 1.5rem 0;
+    margin: 0;
+}
+
+.blog-post p {
+    padding: 0.5rem 1.5rem;
+    flex-grow: 1; /* Makes sure the paragraphs take up available space */
+}
+
+.read-more {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    border-radius: 0 0 8px 8px;
+}
+
+.read-more:hover {
+    background-color: #2b7a37;
+}
+
+
+/* About Us Page Specific Styles */
+
+/* Hero Section */
+.hero-about {
+    background-image: url('../images/hero1_1_11zon.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.hero-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--accent2-color);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* History Section */
+.history-section {
+    padding: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Adventure Section */
+.adventures-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--light-bg-color);
+}
+
+.adventures-section h2 {
+    margin-bottom: 2rem;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.adventure-card {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adventure-card:hover {
+    transform: translateY(-5px);
+}
+
+.adventure-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.adventure-card figcaption {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}

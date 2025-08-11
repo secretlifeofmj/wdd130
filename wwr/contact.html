@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Us - White Water Rafting Site" />
-  <meta name="author" content="Your Name" />
-  <title>Contact Us - White Water Rafting</title>
-  <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Whitewater Rafting for your whitewater rafting adventure. Find our address, phone, email, and location on the map, and meet our happy team!">
+    <meta name="author" content="Whitewater Rafting Development Team">
+    <title>Contact Us | Whitewater Rafting</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Rafting Site Logo" />
-    <h1>White Water Rafting</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <img src="images/Whitewater Rafting.png" alt="Rafting Company Logo" width="200">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header> 
 
-  <main>
-    <section id="company-info" class="company-info">
-      <h2>Contact Information</h2>
-      <p><strong>Company:</strong> White Water Rafting Adventures</p>
-      <p><strong>Address:</strong> 123 River Lane, Rapids City, RC 54321</p>
-      <p><strong>Phone:</strong> <a href="tel:+18005551234">+1 (800) 555-1234</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
-      <div class="map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!..." 
-          width="600" height="450" style="border:0;" allowfullscreen="" 
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section>
+    <main>
+        <!-- Contact Hero and Info Section -->
+        <section class="contact-hero">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>
+                    Whether you're planning your first rafting adventure or returning for another splash of excitement, we’d love to hear from you!
+                </p>
+                <div class="contact-details">
+                    <p><strong>📍 Address:</strong><br>Whitewater Raftingt Adventures<br>23 Trans Amadi Road, Port Harcourt, Rivers State, Nigeria</p>
+                    <p><strong>📞 Phone:</strong><br>+234 801 234 5678</p>
+                    <p><strong>📧 Email:</strong><br>info@whitewaterrafting.com
 
-    <section id="employees" class="employees">
-      <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/employee1.jpg" alt="Team Member 1" />
-        <figcaption>John Doe - River Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Team Member 2" />
-        <figcaption>Jane Smith - Safety Expert</figcaption>
-      </figure>
-    </section>
+</p>
+                    <p>Feel free to call, email, or stop by our office—we're always ready to help you plan the perfect river experience!</p>
+                </div>
+            </div>
+            <img src="images/hero_2_11zon.jpg" alt="Happy client smiling in a raft" class="contact-image">
+        </section>
 
-    <section id="contact-form" class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="contact.html" method="post">
-        <fieldset>
-          <legend>Contact Details</legend>
-          <label for="fullname">Full Name:</label>
-          <input type="text" id="fullname" name="fullname" required />
+        <!-- Our Location Map Section -->
+        <section class="contact-map">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.658661621379!2d33.203657775010665!3d0.4357731995777134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177e7b5f5f5f5f5f%3A0x2a1b1b1b1b1b1b1b!2s12%20Riverbank%20Dr%2C%20Jinja%2C%20Uganda!5e0!3m2!1sen!2sug!4v1700000000000!5m2!1sen!2sug" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map of Afriq Raft Adventures, Jinja, Uganda">
+            </iframe>
+        </section>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+        <!-- Meet Our Team Section -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team!</h2>
+            <div class="team-members">
+                <figure>
+                    <img src="images/download (2).jpg" alt="Frankie, Lead Guide" width="200" height="150"> 
+                    <figcaption>Frankies, Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/download (1).jpg" alt="CHioma, Customer Relations Manager" width="200" height="150"> 
+                    <figcaption>CHioma, Customer Relations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/download (2).jpg" alt="Princes, Gear Specialist" width="200" height="150"> 
+                    <figcaption>Princess, Gear Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/download (1).jpg" alt="Chris, Founder & CEO" width="200" height="150"> 
+                    <figcaption>Chris Sturt, Founder & CEO</figcaption>
+                </figure>
+            </div>
+        </section>
 
-          <label>Purpose:</label>
-          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation" /> Reservation</label>
-          <label><input type="radio" name="purpose" value="feedback" /> Feedback</label>
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="user_name">Name:</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_email">Email:</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div class="form-group purpose-radios">
+                    <label>Purpose of Messages:</label>
+                    <div>
+                        <input type="radio" id="general_inquiry" name="message_purpose" value="general_inquiry" required>
+                        <label for="general_inquiry">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reservation_question" name="message_purpose" value="reservation_question">
+                        <label for="reservation_question">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="website_suggestion" name="message_purpose" value="website_suggestion">
+                        <label for="website_suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user_message">Your Message:</label>
+                    <textarea id="user_message" name="user_message" rows="7" required></textarea>
+                </div>
+                <div class="form-group newsletter-checkbox">
+                    <input type="checkbox" id="newsletter_subscribe" name="newsletter_subscribe" value="yes">
+                    <label for="newsletter_subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <label>
-            <input type="checkbox" name="subscribe" />
-            Please subscribe me to the monthly newsletter.
-          </label>
-        </fieldset>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
-    <nav class="socials">
-      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
-    </nav>
-    <p><a href="https://app.moqups.com/your-wireframe-link">View Wireframe</a></p>
-  </footer>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb1.webp" alt="Facebook Icon Logo" width="40">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/x-512.webp" alt="Twitter Icon logo" width="40">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/intagram.png" alt="Instagram Icon Logo" width="40">
+            </a>
+        </nav>
+        <div class="footer-center-link"> <a href="https://app.moqups.com/9Nw7jzMcu2oHLfK5iLg66i1UEkbDmaIF/view/page/ad64222d5?ui=0&fit_width=1">View The Wireframe</a> </div>
+        <p>&copy;2025 White Water Rafting. All rights reserved.</p>
+    </footer>
 </body>
 </html>

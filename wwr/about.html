@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Whitewater Rafting Co. - About our mission, team, and adventures.">
-  <meta name="author" content="Miracle Peter">
-  <title>About Us | Whitewater Rafting Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Afriq Raft, our mission, our team, and the history of our passion for whitewater rafting adventures.">
+    <meta name="author" content="Afriq Raft Development Team">
+    <title>About Us | Whitewater Rafting</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img src="images/Whitewater Rafting.png" alt="Rafting Company Logo" width="200">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header> 
 
-  <!-- ✅ HEADER (GRID) -->
-  <header class="header-grid">
-    <img src="images/image.png" alt="Whitewater Rafting Co. Logo">
-    <h1>Whitewater Rafting Co.</h1>
-    <nav>
-      <ul class="nav-flex">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-about">
+            <div class="hero-content">
+                <h1>Our Story, Our Passion</h1>
+                <p>From the first paddle stroke to our latest adventure, we've been dedicated to sharing the incredible beauty of Africa's rivers.</p>
+            </div>
+        </section>
 
-  <main>
-    <!-- ✅ HERO SECTION -->
-    <section class="hero">
-      <h2>Our Story</h2>
-      <img src="images/rafting27_1024-hero-image.jpg" alt="Rafting Adventure">
-      <article>
-        <h3>Experience the Rapids</h3>
-        <img src="images/rafting18_600.jpg" alt="Raft Guide">
-        <p>At Whitewater Rafting Co., we live for adventure! Since 2003, our mission has been to deliver unforgettable river experiences. Our trained guides are passionate about the rapids, safety, and creating memories that last a lifetime.</p>
-      </article>
-    </section>
+        <!-- Our History Section -->
+        <section class="history-section card">
+            <h2>Our History</h2>
+            <p>
+                Whitewater Rafting began with a simple dream — to share the thrill and beauty of Africa’s rivers with the world. What started as a small team of river enthusiasts has grown into a trusted water rafting company known for unforgettable adventures, top-tier safety, and happy clients.
+                <br><br>
+                From our first raft to our latest expedition, our mission has remained the same: create exciting, safe, and memorable experiences for everyone who joins us. We take pride in delivering not just a ride, but a journey that brings joy, laughter, and connection with nature.
+                <br><br>
+                Today, Whitewater Rafting continues to make waves — one happy customer at a time.
+            </p>
+        </section> 
 
-    <!-- ✅ HISTORY SECTION -->
-    <section class="history">
-      <h2>History</h2>
-      <p>Founded in 2003, Whitewater Rafting Co. started with one raft and a dream. Over two decades later, we’ve grown into one of the most trusted rafting companies in the country, known for safety, excitement, and unforgettable river adventures.</p>
-    </section>
+        <!-- Adventure Showcase Section -->
+        <section class="adventures-section">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-grid">
+                <figure class="adventure-card">
+                    <img src="images/whiteraftimg (4).jpg" alt="Rafters in a boat on a river">
+                    <figcaption>Nile River Rush</figcaption>
+                </figure>
+                <figure class="adventure-card">
+                    <img src="images/whiteraftimg (5).jpg" alt="A team paddling hard in whitewater">
+                    <figcaption>Zambezi Whitewater</figcaption>
+                </figure>
+                <figure class="adventure-card">
+                    <img src="images/whiteraftimg (6).jpg" alt="View from inside a raft looking down the river">
+                    <figcaption>The Big Kahuna</figcaption>
+                </figure>
+                <figure class="adventure-card">
+                    <img src="images/whiteraftimg (1).jpg" alt="Group of people celebrating in a raft">
+                    <figcaption>Sunset Drift</figcaption>
+                </figure>
+                <figure class="adventure-card">
+                    <img src="images/whiteraftimg (2).jpg" alt="A single kayaker navigating rapids">
+                    <figcaption>Solo Kayak Challenge</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 
-    <!-- ✅ ADVENTURE SECTION -->
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventure-gallery">
-        <figure>
-          <img src="images/rafting47_600.jpg" alt="Los Dientes del Diablo">
-          <figcaption>Los Dientes del Diablo</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting53_600.jpg" alt="Big Mallard">
-          <figcaption>Big Mallard</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting59_600.jpg" alt="Half Day Adventure">
-          <figcaption>Half Day Adventure</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting65_600.jpg" alt="Snake River">
-          <figcaption>Snake River</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting20_600.jpg" alt="The Gauntlet">
-          <figcaption>The Gauntlet</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
-
-  <!-- ✅ FOOTER -->
-  <footer>
-    <p>&copy; 2025 Whitewater Rafting Co. | Miracle Peter</p>
-    <div class="socialmedia">
-      <a href="#"><img src="images/1_Facebook_colored_svg_copy-128.webp" alt="Facebook"></a>
-      <a href="#"><img src="images/X-128.webp" alt="X"></a>
-      <a href="#"><img src="images/instagram_icon-instagram_buttoninstegram-128.webp" alt="Instagram"></a>
-    </div>
-  </footer>
-
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb1.webp" alt="Facebook Icon Logo" width="40">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/x-512.webp" alt="Twitter Icon logo" width="40">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/intagram.png" alt="Instagram Icon Logo" width="40">
+            </a>
+        </nav>
+        <div class="footer-center-link"> <a href="https://app.moqups.com/9Nw7jzMcu2oHLfK5iLg66i1UEkbDmaIF/view/page/ad64222d5?ui=0&fit_width=1">View The Wireframe</a> </div>
+        <p>&copy;2025 Whitewater Rafting Co. | Miracle Peter</p>
+    </footer>
 </body>
 </html>

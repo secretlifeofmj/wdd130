@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore thrilling white water rafting trips with our expert guides. Choose your next adventure today!" />
-  <title>Trips | White Water Rafting</title>
-  <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/trips.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the whitewater rafting trips offered by Afriq Raft. Find the perfect adventure for all skill levels on the Nile River.">
+    <meta name="author" content="Afriq Raft Development Team">
+    <title>Our Trips | Whitewater Rafting Co.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Rafting Site Logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <img src="images/Whitewater Rafting.png" alt="Rafting Company Logo" width="200">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header> 
 
-  <main>
-    <h1>Choose Your Adventure</h1>
+    <main>
+        <!-- Hero Section for Trips Page -->
+        <section class="hero-trips">
+            <div class="hero-content">
+                <h1>Our Exciting Rafting Trips</h1>
+                <p>Choose your adventure! From half-day thrills to multi-day expeditions, we have a trip for every rafter.</p>
+            </div>
+        </section>
 
-    <section class="cta-trips">
-      <p>Ready to ride the rapids? <a href="contact.html">Book your trip now!</a></p>
-    </section>
+        <!-- Trip Packages Table Section -->
+        <section class="trip-table-section">
+            <h2 class="section-title">Find Your Perfect Rafting Adventure</h2>
+            
+            <table class="trip-table">
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th class="hide-on-mobile">Description</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                        <th>Book Now</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Trip Package 1: Half-Day Thrill -->
+                    <tr>
+                        <td data-label="Trip">Half-Day Thrill</td>
+                        <td class="hide-on-mobile" data-label="Description">Perfect for beginners and those short on time. Experience the excitement of the Nile's rapids in a quick, action-packed adventure.</td>
+                        <td data-label="Duration">4 hours</td>
+                        <td data-label="Difficulty">Beginner to Intermediate</td>
+                        <td data-label="Price">$75 per person</td>
+                        <td data-label="Action"><a href="contact.html" class="book-trip-button">Book This Trip</a></td>
+                    </tr>
 
-    <section class="trip-gallery">
-      <div class="trip">
-        <img src="images/trip1.jpg" alt="River Blast Adventure">
-        <h2>River Blast Adventure</h2>
-        <p>A full-day adrenaline-pumping trip through Class IV rapids. For thrill-seekers ready to get soaked!</p>
-      </div>
-      <div class="trip">
-        <img src="images/trip2.jpg" alt="Family Float">
-        <h2>Family Float</h2>
-        <p>A calm scenic trip suitable for families and first-time rafters. Safe, smooth, and beautiful.</p>
-      </div>
-      <div class="trip">
-        <img src="images/trip3.jpg" alt="Twilight Rapids">
-        <h2>Twilight Rapids</h2>
-        <p>Experience the magic of rafting under a sunset sky. Evening trip with glow lights and mild rapids.</p>
-      </div>
-    </section>
+                    <!-- Trip Package 2: Full-Day Expedition -->
+                    <tr>
+                        <td data-label="Trip">Full-Day Expedition</td>
+                        <td class="hide-on-mobile" data-label="Description">A full day of whitewater challenges, scenic views, and a delicious riverside lunch. This trip covers more rapids and offers a more immersive experience.</td>
+                        <td data-label="Duration">8 hours</td>
+                        <td data-label="Difficulty">Intermediate</td>
+                        <td data-label="Price">$120 per person</td>
+                        <td data-label="Action"><a href="contact.html" class="book-trip-button">Book This Trip</a></td>
+                    </tr>
 
-    <section class="trip-table">
-      <h2>Trip Summary</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Trip Name</th>
-            <th>Duration</th>
-            <th>Difficulty</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>River Blast Adventure</td>
-            <td>8 Hours</td>
-            <td>Hard</td>
-            <td>$120</td>
-          </tr>
-          <tr>
-            <td>Family Float</td>
-            <td>3 Hours</td>
-            <td>Easy</td>
-            <td>$60</td>
-          </tr>
-          <tr>
-            <td>Twilight Rapids</td>
-            <td>4 Hours</td>
-            <td>Medium</td>
-            <td>$85</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+                    <!-- Trip Package 3: Multi-Day Journey -->
+                    <tr>
+                        <td data-label="Trip">Multi-Day Journey</td>
+                        <td class="hide-on-mobile" data-label="Description">For the true adventure seeker. This overnight trip combines thrilling rafting with camping under the stars, guided hikes, and a deeper connection with nature.</td>
+                        <td data-label="Duration">2 days / 1 night</td>
+                        <td data-label="Difficulty">Advanced</td>
+                        <td data-label="Price">$250 per person</td>
+                        <td data-label="Action"><a href="contact.html" class="book-trip-button">Book This Trip</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 White Water Rafting | All rights reserved</p>
-    <a href="https://app.moqups.com" target="_blank">View Wireframe</a>
-  </footer>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb1.webp" alt="Facebook Icon Logo" width="40">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/x-512.webp" alt="Twitter Icon logo" width="40">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/intagram.png" alt="Instagram Icon Logo" width="40">
+            </a>
+        </nav>
+        <div class="footer-center-link"> <a href="https://app.moqups.com/9Nw7jzMcu2oHLfK5iLg66i1UEkbDmaIF/view/page/ad64222d5?ui=0&fit_width=1">View The Wireframe</a> </div>
+        <p>&copy; 2025 Whitewater Rafting Co. | Miracle Peter </p>
+    </footer>
 </body>
 </html>
